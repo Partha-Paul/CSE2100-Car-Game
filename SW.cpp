@@ -91,7 +91,17 @@ void play(){
         cout<<"Press a,s,d,w to move the 'Hellow World' ";
         getch();
         xy(50,15);
-        cout<<"                                        ";
+        int n=30,m=120;
+    for(int i=0; i<m; i++)
+    {
+        for(int j=0; j<n; j++)
+        {
+            SetConsoleTextAttribute(amar, 100);
+            xy(i,j);
+            cout<<"   ";
+        }
+        Sleep(5);
+    }
         int Opn=0;
         int DB=0;
         while(1){
@@ -117,6 +127,9 @@ void play(){
         }
         else if(k=='s'){
              Opn=(Opn+1)%30;
+        }
+        else{
+            break;
         }
         SetConsoleTextAttribute(amar,BACKGROUND_RED);
 
