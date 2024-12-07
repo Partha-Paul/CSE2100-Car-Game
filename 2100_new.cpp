@@ -502,7 +502,7 @@ int main()
 {
     system("cls");
     setcursor(0, 0);
-    SetConsoleTextAttribute(amar, 20);
+    SetConsoleTextAttribute(amar, 95);
     system("cls");
     for(int i=0; i<120; i+=4)
     {
